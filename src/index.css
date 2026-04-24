@@ -26,11 +26,13 @@
   --shadow-soft: rgba(0, 0, 0, 0.06);
   --shadow-img: rgba(0, 0, 0, 0.2);
 
-  /* Colores Especiales Clash Royale */
+  /* Colores Especiales Cards*/
   --color-evo: #b24bf3; /* Violeta oscuro mágico */
   --color-evo-hover: #9b3ce0;
   --color-hero: #fbbf24; /* Amarillo Dorado de Campeón */
   --color-hero-hover: #f59e0b;
+  --color-destacado:#FFD700; /* Color dorado para destacar */
+  --fondo-destacado: #CBC3E3; /* Fondo dorado para destacar */
 }
 
 body {
@@ -252,36 +254,6 @@ footer {
   transform: scale(0.95); /* Se hunde cuando hacés click */
 }
 
-/* --- COFRE SORPRESA --- */
-
-.header, .cofre{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;  
-
-}
-
-.cofre p{
-margin:1rem;
-
-}
-
-
-.cofre button{
-
-  padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.cofre button:hover{
-  background-color: greenyellow;
-
-}
 
 /* --- BUSCADOR DE ITEMS --- */
 
@@ -313,4 +285,11 @@ margin:1rem;
 
 .buscador button:hover {
   background-color: var(--color-hero-hover);
+}
+
+/*Clase es destacado*/
+
+.destacado {
+  border: 2px solid var(--color-destacado);
+  background-color: var(--fondo-destacado);
 }

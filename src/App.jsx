@@ -1,4 +1,5 @@
 import CardGrid from "./components/CardGrid"
+import CustomFooter from "./components/CustomFooter";
 import CustomHeader from "./components/CustomHeader"
 import { catalogo } from "./data"
 import { useState } from "react"
@@ -27,7 +28,10 @@ function App() {
   return (
     <>
       <CustomHeader onSearch={handleSearch} onClean={handleClean} />
-      <CardGrid catalogo={itemsFiltrados} />
+      <main>
+        <CardGrid catalogo={itemsFiltrados} />
+      </main>
+      <CustomFooter />
     </>
   )
 }
